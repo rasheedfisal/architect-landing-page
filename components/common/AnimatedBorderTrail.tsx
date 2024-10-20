@@ -39,7 +39,7 @@ export default function AnimatedBorderTrail({
       <div
         className="absolute inset-0  w-full animate-trail"
         style={{
-          //@ts-expect-error
+          //@ts-expect-error: This is required due to incompatible types from a third-party library
           "--duration": duration ?? "10s",
           "--angle": "0deg",
           background: `conic-gradient(from var(--angle) at 50% 50%, transparent ${
