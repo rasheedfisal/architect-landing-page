@@ -1,6 +1,7 @@
 import React from "react";
 import MainButton from "../common/MainButton";
 import StoreLinks, { BtnTypes } from "../common/store-links";
+import Image from "next/image";
 
 function FooterSection() {
   const data = {
@@ -21,7 +22,13 @@ function FooterSection() {
   return (
     <section className="bg-[#232529] px-4 md:px-[94px] py-[90px]">
       <div>
-        <img src="/images/footer_logo.svg" alt="footer logo" />
+        <Image
+          src="/assets/logo.png"
+          className="size-24"
+          width={706}
+          height={632}
+          alt="logo"
+        />
       </div>
 
       <div className="mt-[32px] pb-[50px] flex justify-between w-full gap-8 flex-col md:flex-row flex-wrap">

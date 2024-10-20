@@ -11,13 +11,18 @@ import MoreFeaturesSection from "@/components/sections/MoreFeaturesSection";
 import MultiPlayerDesignSection from "@/components/sections/MultiPlayerDesignSection";
 import ReadyToBuildSection from "@/components/sections/ReadyToBuildSection";
 import SecurityScaleSection from "@/components/sections/SecurityScaleSection";
+import { pick } from "@/lib/utils";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export default function Home() {
+  const messages = useMessages();
   return (
     <main>
       <div className="flex flex-col-reverse md:flex-col">
         {/* <AlertSection /> */}
-        <NavBar />
+        <NextIntlClientProvider messages={messages}>
+          <NavBar />
+        </NextIntlClientProvider>
       </div>
       <div className="mt-8 md:mt-[81px] flex flex-col gap-8 md:gap-[100px] px-4 md:px-[100px]">
         <HeroSection />

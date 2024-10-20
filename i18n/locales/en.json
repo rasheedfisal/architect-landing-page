@@ -1,3 +1,10 @@
 {
-  "site_name": "Architect"
+  "site_name": "Architect",
+  "changelog": "Changelog",
+  "help": "Help",
+  "pricing": "Pricing",
+  "install_app": "Install Architect",
+  "start_free": "Start for free",
+  "hero_h1": "Freelance Platform For All Engineers",
+  "hero_p": "Find Your Dream Job and Start Conntecting with High-End Client With Architect. Discover the Smart Way to use Your Time with Jobs Especially Selected For Engineers."
 }
