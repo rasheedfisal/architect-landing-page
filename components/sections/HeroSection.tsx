@@ -1,7 +1,4 @@
 import React from "react";
-import HeroHeaderSection from "./HeroHeaderSection";
-import MainButton from "../common/MainButton";
-import { HeroYoutubeModal } from "../modals/HeroYoutubeModal";
 import StoreLinks, { BtnTypes } from "../common/store-links";
 import Phone from "../../public/assets/7.png";
 import HeroImage from "../../public/assets/hero2.png";

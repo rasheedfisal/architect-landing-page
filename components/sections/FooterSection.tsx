@@ -1,5 +1,4 @@
 import React from "react";
-import MainButton from "../common/MainButton";
 import StoreLinks, { BtnTypes } from "../common/store-links";
 import Image from "next/image";
 
