@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: `%s | Hundsly`,
   },
   description:
-    "the paltform for hundsly to find the best suitable freelance job",
+    "the paltform for Architect to find the best suitable freelance job",
   icons: {
     icon: "/assets/logo.png", // /public path
   },
