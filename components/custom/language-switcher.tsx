@@ -46,7 +46,7 @@ export default function LanguageSwitcher() {
         <SelectGroup>
           {availableLocales.map((x) => (
             <SelectItem key={x.code} value={x.code}>
-              {x.code}
+              {x.code.toUpperCase()}
             </SelectItem>
           ))}
         </SelectGroup>

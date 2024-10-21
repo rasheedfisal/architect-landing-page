@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <main>
       <div className="flex flex-col-reverse md:flex-col">
-        {/* <AlertSection /> */}
         <NavBar />
       </div>
       <div className="mt-8 md:mt-[81px] flex flex-col gap-8 md:gap-[100px] px-4 md:px-[100px]">
