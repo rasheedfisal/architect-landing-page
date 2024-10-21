@@ -6,13 +6,13 @@ import { env } from "@/lib/env.server";
 export const metadata: Metadata = {
   metadataBase: new URL(env.METADATA_BASE_ROUTE),
   title: {
-    default: "architect",
-    template: `%s | architect`,
+    default: "Hundsly",
+    template: `%s | Hundsly`,
   },
   description:
-    "the paltform for architects to find the best suitable freelance job",
+    "the paltform for hundsly to find the best suitable freelance job",
   icons: {
-    icon: "/icon.png", // /public path
+    icon: "/assets/logo.png", // /public path
   },
 };
 

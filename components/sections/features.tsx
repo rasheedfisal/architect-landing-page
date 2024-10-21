@@ -3,8 +3,10 @@ import ShieldCheck from "../../public/assets/icons/check.png";
 import Coins from "../../public/assets/icons/coins.png";
 import Frames from "../../public/assets/frames.png";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Features() {
+  const t = useTranslations();
   return (
     <section
       id="features"
@@ -12,25 +14,23 @@ function Features() {
     >
       <article className="m-auto w-[30ch] text-center text-gray-500 md:m-0 md:w-full">
         <h2 className="mb-4 text-4xl font-semibold text-gray-800">
-          Make every penny count
+          {t("feature_h2")}
         </h2>
         <p>
-          Spend smarter, lower your bills, get cashback on everything you buy,
+          {t("feature_p1")}
           <br />
-          and unlock credit to grow your business.
+          {t("feature_p2")}
         </p>
       </article>
 
       <article className="flex w-full flex-col gap-8 overflow-hidden xl:h-96 xl:flex-row">
         <div className="flex flex-col rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
-          <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:w-1/2 md:text-left">
-            <h2 className="m-auto text-center text-3xl font-semibold text-gray-800 sm:w-[18ch] md:m-0 md:text-left">
-              Pay with Kobodrop, quick, simple and easy
+          <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:w-1/2 md:text-start p-10">
+            <h2 className="m-auto text-center text-3xl font-semibold text-gray-800 sm:w-[18ch] md:m-0 md:text-start">
+              {t("feature4_h2")}
             </h2>
-            <p className="m-auto text-center text-gray-500 sm:w-[34ch] md:m-0 md:text-left">
-              Paying your bills on Kobodrop has never been easier. Whether you
-              are paying for electricity or internet, Kobodrop gets it done
-              within seconds.
+            <p className="m-auto text-center text-gray-700 sm:w-[34ch] md:m-0 md:text-start">
+              {t("feature4_p")}
             </p>
           </div>
 
@@ -44,12 +44,9 @@ function Features() {
             <Image src={ShieldCheck} alt="" />
           </div>
           <h2 className="text-3xl font-semibold text-gray-800">
-            Bank level security
+            {t("feature3_h2")}
           </h2>
-          <p className="text-gray-500">
-            Your money is 100% safe and secure on Kobodrop. No hassles, no
-            glitches, get access to your money anytime.
-          </p>
+          <p className="text-gray-700">{t("feature3_p")}</p>
         </div>
       </article>
 
@@ -59,22 +56,18 @@ function Features() {
             <Image src={Coins} alt="" />
           </div>
           <h2 className="text-3xl font-semibold text-gray-800">
-            Cost reduction
+            {t("feature2_h2")}
           </h2>
-          <p className="text-gray-500">
-            Kobodrop reduced payments maintenance and processing fees. No hidden
-            fees.
-          </p>
+          <p className="text-gray-700">{t("feature2_p")}</p>
         </div>
 
         <div className="flex flex-col gap-8 overflow-hidden rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
-          <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:mt-0 md:w-1/2 md:text-left">
-            <h2 className="m-auto text-center text-3xl font-semibold text-gray-800 sm:w-[18ch] md:m-0 md:text-left">
-              Send, receive and Exchange money
+          <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:mt-0 md:w-1/2 md:text-start p-10">
+            <h2 className="m-auto text-center text-3xl font-semibold text-gray-800 sm:w-[18ch] md:m-0 md:text-start">
+              {t("feature1_h2")}
             </h2>
-            <p className="m-auto text-center text-gray-500 sm:w-[34ch] md:m-0 md:text-left">
-              Transfers, payments all work on Kobodrop. Get your alert message
-              immediately after a completed transaction.
+            <p className="m-auto text-center text-gray-700 sm:w-[34ch] md:m-0 md:text-start">
+              {t("feature1_p")}
             </p>
           </div>
 

@@ -62,6 +62,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-logical"), require("tailwindcss-animate")],
 };
 export default config;

@@ -1,48 +1,49 @@
 import React from "react";
 import FeatureCard from "../cards/FeatureCard";
 import CustomStyledHeader from "../common/CustomStyledHeader";
+import { useTranslations } from "next-intl";
 
 function MoreFeaturesSection() {
+  const t = useTranslations();
   const features = [
     {
       iconUrl: "/images/f_1.png",
-      title: "Quick actions",
-      description: "Streamline your workflow with customizable shortcuts.",
+      title: "why_choose1_title",
+      description: "why_choose1_desc",
     },
     {
       iconUrl: "/images/f_2.png",
-      title: "Automatic enrichment",
-      description:
-        "Update your contacts with the latest information on autopilot.",
+      title: "why_choose2_title",
+      description: "why_choose2_desc",
     },
     {
       iconUrl: "/images/f_3.png",
-      title: "Chrome extension",
-      description: "Stay lean with Attio's lightweight browser extension.",
+      title: "why_choose3_title",
+      description: "why_choose3_desc",
     },
     {
       iconUrl: "/images/f_4.png",
-      title: "Contact analysis",
-      description: "Get deeper insights into your contacts at a single glance.",
+      title: "why_choose4_title",
+      description: "why_choose4_desc",
     },
     {
       iconUrl: "/images/f_5.png",
-      title: "Filters",
-      description: "Streamline your workflow with customizable shortcuts.",
+      title: "why_choose5_title",
+      description: "why_choose5_desc",
     },
     {
       iconUrl: "/images/f_6.png",
-      title: "Tiered sorting",
-      description: "Update your contacts with the latest information on.",
+      title: "why_choose6_title",
+      description: "why_choose6_desc",
     },
   ];
   return (
     <section className="bg-[#232529] px-4 md:px-[94px] py-[116px]">
       <div>
         <CustomStyledHeader
-          titleColored="And so"
-          titleUnColored="much more..."
-          description="Your customers are always connected. Why should your CRM be any different?"
+          titleColored={t("why_choose_header1")}
+          titleUnColored={t("why_choose_header2")}
+          description={t("why_choose_desc")}
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[64px]">

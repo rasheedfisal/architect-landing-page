@@ -2,33 +2,36 @@ import React from "react";
 import CustomStyledHeader from "../common/CustomStyledHeader";
 import MainButton from "../common/MainButton";
 import TweetCard from "../cards/TweetCard";
+import { useTranslations } from "next-intl";
+import { Button } from "../ui/button";
 
 function LovedByBuildersSection() {
+  const t = useTranslations();
   const tweets = [
     {
       imageUrl: "/images/a_1.png",
-      reviewerName: "Sebastiaan Debrouwere",
-      reviewerTag: "@iamsebdeb",
+      reviewerName: "Lubna Ali",
+      reviewerTag: "@lubnaali",
       review:
-        "We use @attio on a daily basis for several internal processes, and I cannot rave enough about them. Incredible flexibility and features combined with super intuitive UI",
+        "لقد جربت العديد من المنصات لتوظيف المهندسين، لكن لا شيء يقارن بـ Hundsly. التصفية المتقدمة تجعل من السهل العثور على المهارات المناسبة لمشاريعي.",
       timestamp: "10:01 PM - Apr 7, 2022",
     },
 
     {
       imageUrl: "/images/a_2.png",
-      reviewerName: "Alon",
-      reviewerTag: "@alon",
+      reviewerName: "mohammed rabi3",
+      reviewerTag: "@mohammedrabi3",
       review:
-        "As an early stage startup I'm really loving using @attio - great balance of flexibility and prescriptiveness",
+        "Hundsly offers everything I need for efficient project management. The escrow payment system ensures my payments are secure, giving me peace of mind.",
       timestamp: "6:57 PM - Dec 1, 2022",
     },
 
     {
       imageUrl: "/images/a_3.png",
-      reviewerName: "Alexandra Smith",
-      reviewerTag: "@smith_alexandra",
+      reviewerName: "somia khaled",
+      reviewerTag: "@somiakhaled",
       review:
-        "We use our CRM @attio for sales, fundraising, and recruiting. It's awesome",
+        "ما يميز Hundsly هو التزامهم بدعم العملاء. من اللحظة التي نشرت فيها مشروعي، تلقيت عروضًا من خبراء موثوقين.",
       timestamp: "1:32 PM - Jan 4, 2023",
     },
 
@@ -37,24 +40,24 @@ function LovedByBuildersSection() {
       reviewerName: "Khrisna",
       reviewerTag: "@ntkris",
       review:
-        "Holy shit @attio is beautiful 😍 I've run my CRM on Notion to date. Hubspot & Salesforce too clunky. Sleek and simple, just what I need",
+        "With Hundsly, I have full visibility into my project’s status. The real-time tracking feature allows me to monitor tasks and milestones effortlessly.",
       timestamp: "10:22 PM - Mar 3, 2023",
     },
 
     {
       imageUrl: "/images/a_5.png",
-      reviewerName: "Villa Gouse",
-      reviewerTag: "@villa_gouse",
+      reviewerName: "Liyla moamen",
+      reviewerTag: "@liylamoamen",
       review:
-        "Let's be honest, most CRMs suck. Overcomplicated, expensive, and you have to bend to their will...not the other way around. I am a huge fan of @attio - their product is rock-solid, customer support is AAA, and it is *very* flexible and simple.",
+        "Hundsly هو التطبيق المثالي الذي كنت أبحث عنه! يربطني بأفضل المهندسين ويوفر أدوات آمنة لإدارة المشاريع بكفاءة.",
       timestamp: "10:22 PM - Mar 3, 2023",
     },
     {
       imageUrl: "/images/a_6.png",
-      reviewerName: "Damian",
-      reviewerTag: "@damian09",
+      reviewerName: "Walaa Faisal",
+      reviewerTag: "@walaafaisal",
       review:
-        "I've been using @attio to track applicants, manage my deal pipeline and manage the associated notes/tasks. The use-cases are unlimited; it truly feels like the Notion of CRM.",
+        "لقد أحدث Hundsly ثورة في كيفية توظيف المهندسين. النظام يضمن أن كل شخص نعمل معه يتمتع بأعلى مستوى من الاحترافية.",
       timestamp: "10:22 PM - Mar 3, 2023",
     },
   ];
@@ -62,16 +65,14 @@ function LovedByBuildersSection() {
     <section className="relative bg-[#232529] px-4 md:px-[94px] py-[116px]">
       <div>
         <CustomStyledHeader
-          titleColored="Loved by"
-          titleUnColored="Engineers"
-          description="Architect is the Job Hunting Platform for Engineers who values Quality Jobs."
+          titleColored={t("loved_by_title1")}
+          titleUnColored={t("loved_by_title2")}
+          description={t("loved_by_desc")}
         />
 
-        <MainButton
-          text="More customer stories"
-          size="small"
-          className="border border-[#31373D] text-[#EDEEF0] rounded-[12px] bg-transparent mt-[32px]"
-        />
+        <Button className="border border-[#31373D] text-[#EDEEF0] rounded-[12px] bg-transparent mt-[32px]">
+          {t("more_stories")}
+        </Button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[64px]">
         {tweets.map((item, index) => (
