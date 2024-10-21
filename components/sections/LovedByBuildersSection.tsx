@@ -1,6 +1,5 @@
 import React from "react";
 import CustomStyledHeader from "../common/CustomStyledHeader";
-import MainButton from "../common/MainButton";
 import TweetCard from "../cards/TweetCard";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
