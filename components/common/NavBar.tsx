@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../custom/language-switcher";
-import { Button } from "../ui/button";
+import { ButtonLink } from "../custom/button-link";
 
 function NavBar() {
   const t = useTranslations();
@@ -22,13 +22,15 @@ function NavBar() {
           </div>
           <div className="flex items-center gap-2 select-none">
             <LanguageSwitcher />
-            <Button className="rounded-[12px]">{t("install_app")}</Button>
-            <Button
+            <ButtonLink href="/#install" className="rounded-[12px]">
+              {t("install_app")}
+            </ButtonLink>
+            {/* <Button
               variant={"outline"}
               className="hidden sm:block rounded-[12px]"
             >
               {t("start_free")}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

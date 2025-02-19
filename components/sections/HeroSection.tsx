@@ -9,7 +9,7 @@ function HeroSection() {
   const t = useTranslations();
   return (
     <section className="relative mt-4 flex h-fit max-w-7xl flex-col items-center gap-10 px-8 sm:gap-16 md:my-0 md:h-[84.9vh] md:flex-row md:gap-0 lg:px-12 xl:m-auto xl:gap-0 xl:overflow-hidden">
-      <div className="sm:w-full md:w-1/2">
+      <div className="sm:w-full md:w-1/2" id="install">
         <h1 className="mx-auto mb-8 w-[12ch] text-center text-4xl font-semibold text-gray-800 sm:text-5xl md:mx-0 md:text-start">
           {t("hero_h1")}
         </h1>

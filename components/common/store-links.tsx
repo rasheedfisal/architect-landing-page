@@ -17,7 +17,7 @@ function StoreLinks({ type }: StoreLinksProps) {
     return (
       <div className="mt-10 hidden justify-center gap-2 sm:flex md:justify-normal">
         <StoreLink
-          href="https://www.apple.com/app-store"
+          href="https://apps.apple.com/us/app/architect/id6581491473"
           upperText="Download on the"
           lowerText="App Store"
           logo={AppleLogo}
@@ -26,6 +26,7 @@ function StoreLinks({ type }: StoreLinksProps) {
         />
         <StoreLink
           href="https://play.google.com"
+          //href="https://play.google.com/store/apps/details?id=com.aqaratexpoo.app"
           upperText="Get it on"
           lowerText="Google Play"
           logo={GooglePlay}
