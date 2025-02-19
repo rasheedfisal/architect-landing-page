@@ -40,7 +40,7 @@ function StoreLinks({ type }: StoreLinksProps) {
     return (
       <>
         <StoreLink
-          href="https://www.apple.com/app-store"
+          href="https://apps.apple.com/us/app/architect/id6581491473"
           upperText="Download on the"
           lowerText="App Store"
           logo={AppleLogo}
